@@ -1,0 +1,41 @@
+<!--pages/my/my.wxml-->
+ <scroll-view> 
+<view class='container container-box start noflow'>
+  <view class='my-header'>
+    <image class='bg-img' src='http://p0d5h4tnt.bkt.clouddn.com/bg1.png'></image>
+    <view class='header-box'>
+      <view class='header-icon'>
+        <image class='avatar' src='http://p0d5h4tnt.bkt.clouddn.com/header.jpg'></image>
+      </view>
+      <view class='nikename'>牧马人666</view>
+    </view>
+  </view>
+  <view class='my-bar'>
+    <view class='my-bar-item' bindtap='checkOrder'>
+      <image src='../../imgs/icon/order.png'></image>
+      <view class='bar-itme-title'>我的订单</view>
+    </view>
+    <view class='my-bar-item'>
+      <image src='../../imgs/icon/special.png'></image>
+      <view class='bar-itme-title'>优惠券</view>
+    </view>
+    <view class='my-bar-item'>
+      <image src='../../imgs/icon/record.png'></image>
+      <view class='bar-itme-title'>我的病历</view>
+    </view>
+  </view>
+  <view class='content-box'>    
+     <view class='my-item' bindtap='toAboutUs'>
+        <image src='../../imgs/icon/we.png'></image>
+        <view class='my-title-item'>关于我们</view>
+        <icon><image src='../../imgs/icon/more.png'></image></icon>
+     </view> 
+     <view class='my-item' bindtap='toHelp'>
+        <image src='../../imgs/icon/help.png'></image>
+        <view class='my-title-item'>帮助中心</view>
+        <icon><image src='../../imgs/icon/more.png'></image></icon>
+     </view> 
+  </view>
+  <view class='copyright'>南方医院信息技术中心</view>
+</view>
+ </scroll-view> 

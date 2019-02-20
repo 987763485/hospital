@@ -1,0 +1,101 @@
+/* pages/my/my.wxss */
+@import '../aval/base.wxss';
+.my-header{  
+  width: 100%;
+  height: 368rpx;
+  z-index: 10;
+}
+.header-box{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  margin: 40rpx;
+}
+.header-icon{
+  padding: 38rpx;
+  width: 130rpx;
+  height: 130rpx;  
+}
+.avatar{
+  border-radius: 50%;
+}
+.nikename{ 
+  font-size: 32rpx; 
+    color: #fff;  
+}
+.bg-img{
+  position: absolute;
+  height: 468rpx;  
+}
+.my-bar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 88vw;
+  height: 200rpx;  
+  background-color: #fff; 
+  z-index: 10; 
+}
+.my-bar-item{
+  display: flex;
+  flex-direction: column;
+   align-items: center;  
+}
+.my-bar-item image{
+  width: 60rpx;
+  height:60rpx;
+}
+.bar-itme-title{
+  font-size: 28rpx;
+  padding-top: 28rpx;
+}
+.content-box{
+  width: 100vw;
+  margin-top: 20rpx; 
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.content-box :last-child{
+  border-bottom: none;
+}
+.my-item{
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-left: 40rpx;
+  margin-right: 20rpx;
+  margin-top: 10rpx;
+  height: 98rpx;
+  font-size: 28rpx;  
+  text-align: left;  
+  border-bottom: 1px solid #d5d5d5;
+}
+.my-item image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.my-item icon{
+  position: absolute;
+  right: 0px;
+}
+.my-title-item{
+  padding-left: 30rpx;
+}
+.copyright{
+  font-size: 24rpx;
+  color: #b5b5b5;  
+  position: absolute;
+  bottom: 40rpx;
+}
+page{
+   height: 100vh; 
+   overflow-y:hidden;
+}
+scroll-view{
+  height: 100vh;
+}
+.noflow{
+ height: 101%;
+}

@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<import src='../aval/menu/menu.wxml' />
+<view class='container'>
+
+  <swiper class='swiper'indicator-dots='true' autoplay='true'>
+    <block wx:for='{{bannerArr}}'>
+      <swiper-item>
+        <image class='item-img' src='{{item.img_url.url}}'></image>
+      </swiper-item>     
+    </block>
+  </swiper>
+
+  <view class='index-main'>
+    <template is="menu"></template>
+
+    <view class='content-box'>
+      <view class='main-header'>专家栏目</view>
+      <view class='index-theme'>
+      <block wx:for='{{themeArr}}'>
+        <view class="theme-item {{index==0?'big':''}}">
+          <image src='{{item.top_img_url.url}}'></image>
+        </view>
+      </block>       
+      </view>      
+    </view> 
+
+    <view class='content-box box-margin'>
+      <view class='main-header'>优惠专区</view>
+      <view class='conce'>
+        <block wx:for='{{discountArr}}'>
+          <view class="conce-item {{index!=0?'padding':''}}">
+             <image src='{{item.top_img_url.url}}'></image> 
+          </view>
+        </block>
+      </view>  
+    </view> 
+       
+  </view>
+</view>

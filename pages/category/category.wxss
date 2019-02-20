@@ -1,0 +1,76 @@
+/* pages/category/category.wxss */
+ @import '../aval/base.wxss'; 
+.category-box{
+  display: flex;
+  width: 100%;  
+  height:100vh; 
+  overflow: hidden;  
+}
+.left-box{
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  
+  flex: 2;
+  padding-top: 24rpx;
+  border-right:1rpx solid #D8D8D8;
+   overflow:scroll;   
+}
+.right-box{
+  display: flex;
+  flex-direction: column;
+  flex: 8;
+  overflow-y: scroll;   
+}
+.category-item{   
+  padding: 28rpx 40rpx;  
+  font-size: 28rpx;
+  text-align: center; 
+}
+.category-detail-box{
+  padding: 36rpx;
+  overflow: hidden;
+}
+.category-head{  
+  height: 200rpx;
+  text-align: center;  
+}
+.category-title{
+  margin: 30rpx;
+  padding-top: 20rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #F75798;
+}
+.case-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.case-item{
+  width: 33.3%;
+  box-sizing: border-box;
+  padding: 30rpx;  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.case-img{
+  width: 84rpx;
+  height: 84rpx;
+}
+.case-name{
+  padding-top: 20rpx;
+  font-size: 28rpx;
+}
+.select{
+  color: #F75798;
+  border-left: 10rpx solid #F75798;
+}
+page{
+  height: 100vh;
+}
+scroll-view{
+  height: 100%;  
+}
+.container{
+  height: 101%;
+}

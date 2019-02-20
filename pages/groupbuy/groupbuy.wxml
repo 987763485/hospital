@@ -1,0 +1,26 @@
+<!--pages/groupbuy/groupbuy.wxml-->
+<view class='container'>
+   <view class='search'>
+   <icon class="" type="search" size="14"></icon>
+   <input confirm-type='send' bindfocus='onFocus' bindblur='offFocus'></input>  
+  </view>  
+  <view class='groupbuy-box'>
+    <block wx:for='{{groupBuy}}'>
+      <view class='group-item' bindtap='toDetail'>
+        <view class='group-item-img'>
+          <image src='http://p0d5h4tnt.bkt.clouddn.com/350x350.jpg'></image>
+        </view>
+        <!-- <view class='group-time'>剩余    2天3小时28分15秒</view> -->
+        <view class='group-item-de'>
+          <view class='group-item-de-left'>
+            <text class='group-item-title'>无痛人流</text>
+            <view class='group-item-nu'>2/3人团</view>
+          </view>
+          <view class='group-item-de-right'>
+            <view class='group-button'>立即参团</view>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>  
+</view>

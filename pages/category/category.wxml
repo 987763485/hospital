@@ -1,0 +1,40 @@
+<!--pages/category/category.wxml-->
+<scroll-view>
+<view class='container'>
+  <view class='category-box'>
+
+    <view class='left-box' scroll-y>
+      <block wx:for='{{categorys}}'>
+        <view class="category-item {{index==currentMenuIndex?'select':''}}" bindtap='getCategoryItem' data-index='{{index}}' >{{item.name}}</view>           
+      </block>
+    </view>
+
+
+    <view class='right-box'>
+      <view class='show-box'>
+        <view class='category-detail-box'>
+          <view class='category-head'>
+            <image src='{{categoryItem.headImgUrl}}'></image>
+          </view>
+
+          <view class='category-title'>
+              <text>{{categoryItem.title}}</text>
+          </view>
+
+          <view class='case-box'>
+            <block wx:for='{{categoryItem.caseData}}'>
+              <view class='case-item' bindtap='toDetail' data-id='{{item.Id}}'>
+                <view class='case-img'>
+                  <image src='{{item.topic_img_url}}'></image>
+                </view>
+                <view class='case-name'>{{item.name}}</view>
+              </view>                            
+            </block>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+</scroll-view>

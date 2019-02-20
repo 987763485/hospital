@@ -1,0 +1,148 @@
+/* pages/detail/detail.wxss */
+ @import '../aval/base.wxss'; 
+.detail-box{
+  background-color: #f5f5f9;
+  width: 100%;
+}
+.box-item{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding-bottom: 20rpx;
+}
+.detail-img{
+  width: 100%;
+  height: 578rpx;
+}
+
+.item-title{
+ font-size: 32rpx;
+ padding: 30rpx 20rpx 16rpx 28rpx; 
+ background-color: #fff;
+}
+
+.detail-price{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  top: -14rpx; 
+  right: 36rpx;
+}
+.price-de{
+  width: 130rpx;
+  height: 48rpx;
+  font-size: 24rpx;  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ee2174;
+  color: #fff;
+  border-top-left-radius:24rpx;
+  border-bottom-left-radius:24rpx; 
+}
+.price-nm{
+  font-size: 28rpx;
+  padding-left: 20rpx;
+}
+.serve{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 10rpx;
+}
+.serve-item{
+  font-size: 24rpx;
+  display: flex; 
+  align-items: center;
+  padding: 10rpx;
+  padding-top: 0;   
+}
+.servr-icon{
+  padding: 8rpx;
+  width: 24rpx;
+  height: 24rpx;
+}
+
+.datail-content{
+  background-color: #fff;
+
+}
+.detaail-bar{
+  height: 94rpx;  
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  font-size: 32rpx;
+}
+.detaail-bar-item{
+  height: 100%;
+  width: 200rpx; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;    
+}
+.select{
+  border-bottom: 4rpx solid #ee2174;
+}
+.product-detail-box{  
+}
+.detail-box-item{
+font-size: 0;
+}
+.detail-warp{
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  bottom: 0px;
+  width: 100%;
+  height: 98rpx;
+  background-color: #fff;
+}
+.warp-left{
+  display: flex;
+  flex: 1;
+  padding: 0 10rpx 0 40rpx; 
+}
+.warp-right{
+  flex: 2;
+  display: flex;   
+  color: #fff;
+  font-size: 32rpx; 
+}
+.warp-right>view{
+  flex: 1;
+  text-align: center;
+  line-height: 98rpx;
+  width: 50%;
+  height: 98rpx;
+}
+.warp-left-item{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  color: #a9a9a9;
+  font-size: 24rpx;  
+}
+.warp-left-item image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.warp-t{
+  background-color: #ff83b5;
+}
+.warp-p{
+  background-color: #ee2174;
+}
+.comment{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100rpx;
+  font-size: 28rpx;  
+  padding-bottom: 100px;
+}

@@ -1,0 +1,68 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+
+  <view class='detail-box'>
+    <view class='detail-img'>
+      <image src='{{cases.main_img_url}}'></image>      
+    </view>
+    <view class='box-item'>
+      <view class='item-title'>
+      {{cases.name}}
+      {{cases.description}}
+      </view>
+      <view class='detail-price'>
+        <view class='price-de'>{{cases.case_ppt.group_number}}人拼团价</view>
+        <view class='price-nm'>￥{{cases.case_ppt.group_price}}</view>
+      </view>
+    </view>
+
+    <view class='box-item'>
+      <view class='item-title'>服务项目</view>
+      <view class='serve'>
+       <block wx:for='{{cases.case_serve}}'>
+         <view class='serve-item'>
+            <view class='servr-icon'><image src='../../imgs/icon/ok.png'></image></view>
+            <text>{{item.serve_id.title}}</text>
+          </view>
+       </block>        
+      </view>
+    </view>
+
+    <view class='datail-content'>
+      <view class='detaail-bar'>
+        <block wx:for="{{['详细介绍','用户评论']}}">
+          <view class="detaail-bar-item {{currentTabsIndex==index?'select':''}}" bindtap='ontabsItemTap' data-index='{{index}}'>{{item}}</view>
+        </block>
+      </view>
+      <view class='product-detail-box'>
+        <view class='detail-box-item' hidden='{{currentTabsIndex!=0}}'>
+           <block wx:for='{{cases.img_list}}'> 
+            <image src='{{item.img_url.url}}' mode='widthFix'></image>                  
+           </block> 
+        </view>
+
+        <view class='detail-box-item' hidden='{{currentTabsIndex!=1}}'>           
+            <view class='comment'>评论ssssssssssss</view>                  
+           
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <view class='detail-warp'>
+    <view class='warp-left'>
+      <navigator class='warp-left-item' hover-class='none' open-type='switchTab' url='/pages/index/index'>
+        <image src='../../imgs/icon/index.png'></image>
+        <view>首页</view>
+      </navigator> 
+      <button class='warp-left-item' open-type="contact" hover-class='none'>
+        <image src='../../imgs/icon/service.png'></image>
+        <view>客服</view>
+      </button>
+    </view>
+    <view class='warp-right'>
+      <view class='warp-t'>预约</view>
+      <view class='warp-p' bindtap='toCreatOrder'>团购</view>
+    </view>
+  </view>
+</view>

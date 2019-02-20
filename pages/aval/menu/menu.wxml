@@ -1,0 +1,37 @@
+<template name="menu">
+  <view class='index-menu'>
+     
+      <navigator class='menu-item' url='/pages/aboutus/aboutus' hover-class='none'>
+        <image class='menu-img' src='../../imgs/icon/icon-menu1.png'></image>
+        <view class='meun-text'>
+          <view class='menu-title'>医院简介</view>
+          <view class='menu-dec'>医院概况 全面了解</view>
+        </view>
+      </navigator>
+      
+      <view class='menu-item' bindtap='toLocation'>
+        <image class='menu-img' src='../../imgs/icon/icon-menu2.png'></image>
+        <view class='meun-text'>
+          <view class='menu-title'>来院路线</view>
+          <view class='menu-dec'>医院概况 全面了解</view>
+        </view>
+      </view>
+
+      <button class='menu-item' open-type="contact" hover-class='none'>
+        <image class='menu-img' src='../../imgs/icon/icon-menu3.png'></image>
+        <view class='meun-text'>
+          <view class='menu-title'>在线咨询</view>
+          <view class='menu-dec'>医院概况 全面了解</view>
+        </view>
+      </button>
+      
+      <view class='menu-item' bindtap='phoneCall'>
+        <image class='menu-img' src='../../imgs/icon/icon-menu4.png'></image>
+        <view class='meun-text'>
+          <view class='menu-title'>电话咨询</view>
+          <view class='menu-dec'>医院概况 全面了解</view>
+        </view>
+      </view>
+      
+    </view>
+</template>

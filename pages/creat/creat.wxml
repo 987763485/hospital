@@ -1,0 +1,72 @@
+<!--pages/creat/creat.wxml-->
+<view class='container'>
+  <view class='creat-box'>
+
+    <view class='creat-box-item product'>
+      <view class='product-img'><image src='http://p0d5h4tnt.bkt.clouddn.com/350x350.jpg'></image></view>
+        <view class='product-de'>
+        <view>不孕不育</view>
+        <view class='ft14'>生生世世事实上事实上事实上山山水水所....</view>
+        <view class='price'>预约价格：
+          <view class='price-nm'>￥30元</view>
+        </view>
+      </view>
+    </view>
+
+   <view class='gap40'></view>
+    <view class='creat-box-item info'>
+      <form>
+        <view class='info-item nobordertop'>
+          <label>患者姓名</label>
+          <input></input>
+        </view>
+        <view class='info-item'>
+          <label>联系电话</label>
+          <input></input>
+        </view>
+        <view class='info-item'>
+          <label>预约时间</label>
+          <picker mode="date" value="{{date}}" start="2015-09-01" end="2035-09-01" bindchange="bindDateChange">
+            
+            <view class="picker">
+              {{date}}
+            </view>
+            <view class="picker" hidden='{{date}}' >
+              2018-05-01              
+            </view>
+            <view class='choise'><image src='../../imgs/icon/choise.png'></image></view>
+          </picker>
+        </view>       
+         
+         
+          <view class='gap60'></view>
+           <view class='info-item'>
+            <label>备注</label>
+            <input placeholder='输入留言内容'></input>
+          </view>
+          <view class='info-item'>
+            <label>通知</label>
+            <switch checked='true'></switch>
+          </view>
+      </form>
+    </view>
+
+    
+    <!-- <view class='gap'></view>
+    <view class='creat-box-item'>      
+      <view class='item-list'>
+        <label>电话通知</label>
+        <switch checked='true'></switch>
+      </view>
+      <view class='item-list'>
+        <label>留言</label>
+        <input placeholder="输入内容留言"></input>
+      </view>
+    </view> -->
+  </view>
+
+  <view class='warp'>
+    <view class='warp-de'>￥30.00元</view>
+    <view class='warp-button'>提交订单</view>
+  </view>
+</view>
